@@ -1,8 +1,11 @@
 import React from 'react'
+import Cards from '../../components/cards/cards'
 
 export const Tasks = () => {
   return (
-    <div>tasks</div>
+    <div>
+      <Cards task_name="Имя карты 1"/>
+    </div>
   )
 }
 

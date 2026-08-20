@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: habit_tracker_postgres
+    environment:
+      POSTGRES_USER: habit_user
+      POSTGRES_PASSWORD: habit_password
+      POSTGRES_DB: habit_tracker
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
